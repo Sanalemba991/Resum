@@ -625,3 +625,74 @@ $lightGreen: #b9e7e7;
 .Navbar {
   /* Add your navbar styles here */
 }
+/* Default styles */
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.app .container {
+  width: 100%; /* Set container width to fill the screen */
+}
+
+/* Additional styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .app .container {
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .app .auth {
+    height: auto; /* Remove fixed height for authentication section */
+  }
+
+  .app .navbar .container {
+    padding: 5px 0; /* Adjust padding for navbar */
+  }
+
+  .app footer {
+    margin-top: 50px; /* Reduce margin top for footer */
+    padding: 10px; /* Adjust padding for footer */
+    font-size: 10px; /* Reduce font size for footer */
+  }
+
+  .app .home .posts {
+    margin-top: 20px; /* Reduce margin top for posts */
+    gap: 20px; /* Reduce gap between posts */
+  }
+
+  .app .home .posts .post {
+    flex-direction: column; /* Stack posts vertically */
+    gap: 20px; /* Adjust gap between post elements */
+  }
+
+  .app .home .posts .post .img::after {
+    display: none; /* Hide note CSS for post images */
+  }
+
+  .app .single,
+  .app .add {
+    flex-direction: column; /* Stack single and add components vertically */
+    gap: 20px; /* Adjust gap between components */
+    margin-top: 20px; /* Add margin top for better spacing */
+  }
+
+  .app .single .menu {
+    margin-left: 0; /* Remove margin left for menu in single view */
+  }
+
+  .app .add .content,
+  .app .add .menu {
+    flex: 1; /* Expand content and menu to fill the width */
+  }
+
+  .app .add .menu .item {
+    margin-left: 0; /* Remove margin left for menu items */
+  }
+
+  .app .navbar .container .logo img {
+    width: 70px; /* Reduce logo size */
+  }
+}
+
+/* Add more specific styling as needed for mobile layout */
