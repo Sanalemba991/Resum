@@ -1,0 +1,627 @@
+$lightGreen: #b9e7e7;
+
+
+.app {
+
+  display: flex;
+  justify-content: center;
+
+  // Your additional styles for the .app container go here
+  .container {
+    width: 1024px;
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+
+
+    }
+
+    //LOgin, Register
+    .auth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: lightGreen;
+      flex-direction: column;
+
+      h1 {
+        font-size: 30px;
+        color: teal;
+        margin-bottom: 20px
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 200px;
+
+        gap:20px input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        background-color: teal;
+        color: white;
+
+
+      }
+
+      p {
+        font-size: 15px;
+        color: red;
+        text-align: centre;
+      }
+
+      span {
+        text-align: centre;
+      }
+
+    }
+
+    .navbar {
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+          img {
+            width: 90px;
+          }
+
+        }
+
+        .links {
+
+          display: flex;
+          gap: 20px;
+          align-items: center;
+
+          h6 {
+            font: size 16px;
+            font-weight: 300;
+
+          }
+
+          span {
+            cursor: pointer;
+          }
+
+          .write {
+            background-color: #b9e7e7;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            justify-content: center;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+
+              color: #b9e7e7;
+              background-color: aliceblue;
+              border: 1px solid teal;
+            }
+          }
+        }
+
+      }
+    }
+
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      background-color: #b9e7e7;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+
+      img {
+        height: 50px;
+      }
+    }
+
+
+    //home
+
+    .home {
+      .posts {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+
+        .post {
+          display: flex;
+          gap: 100px;
+
+          &:nth-child(2n+1) {
+            flex-direction: row-reverse;
+          }
+          
+
+          .img {
+            flex: 2;
+            position: relative;
+
+            //note css
+            &::after {
+              content: "";
+              width: 100%;
+              height: 65%;
+              background-color:white;
+              position: absolute;
+              top: 20px;
+              left: -20px;
+              z-index: -1;
+
+            }
+
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover
+            }
+          }
+
+          .content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+              font-size: 48px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+
+            button {
+              width: max-content;
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              border: 1px solid $lightGreen;
+              color: black;
+
+              &:hover {
+                border: 1px solid white;
+                background-color: #b9e7e7;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    //single
+    .single {
+      display: flex;
+      gap: 50;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+
+        .user {
+          display: flex;
+          align-items: centre;
+          font-size: 14px;
+          gap: 10px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            font-weight: bold;
+          }
+
+          .edit {
+            display: flex;
+            gap: 5;
+
+            img {
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+          }
+
+          h1 {
+            font-size: 40px;
+
+          }
+
+          p {
+            text-align: justify;
+            line-height: 30px;
+          }
+        }
+      }
+      .menu{
+        flex:2;
+        display: flex;
+        flex-direction: column;
+        gap:95px;
+        margin-left: 20px;
+
+        h1{
+          font-size: 20px;
+          color:#555;
+
+
+        }
+        button {
+          width: max-content;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          border: 1px solid $lightGreen;
+          color: black;
+
+          &:hover {
+            border: 1px solid white;
+            background-color: #b9e7e7;
+            color: black;
+          }
+        }
+        .post{
+          display: flex;
+          flex-direction: column;
+          gap:10px;
+          img{
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          }
+        }
+      } 
+    }
+   .add{
+    margin-top: 20px;
+    display: flex;
+    gap:20px;
+    
+    .content{
+      flex:5;
+     display: flex;
+     flex-direction: column;
+      gap: 20px;
+      input{
+        padding: 10px;
+        border:1px solid lavenderblush;
+      }
+      .editorContainner{
+        height:300px;
+        overflow:scroll;
+        border:1px solid lightgray;
+        padding :10px;
+        .editor{
+          height:100% ;
+          border: none;
+
+        }
+
+      }
+
+    }
+    .menu{
+      flex:2;
+      display: flex;
+      flex-direction:column;
+      gap:20px;
+     
+      .item{
+        border:1px solid lightgray;
+        padding :10px;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: #555;
+
+        h1{
+          font-size:20px;
+
+        }
+        .file
+        {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .buttons{
+          display: flex;
+          justify-content: space-between;
+          :first-child{
+            color:teal;
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid teal;
+            padding: 3px 5px;
+          }
+          :last-child{
+            color: #555;
+            cursor: pointer;
+            background-color: #b9e7e7;
+            border: 1px solid teal;
+            padding: 3px 5px;
+          }
+        }
+        
+.cat{
+  display: flex;
+  flex-direction: column;
+  color:teal;
+
+}
+
+
+      }
+    }
+    
+   }
+    
+  }
+}
+/* Styling for the container */
+.Sam {
+  text-align: center; /* Center the content horizontally */
+  margin-top: 100px;
+  margin-right: 30px;
+   /* Add some space at the top */
+}
+
+/* Styling for the button */
+.Sam button {
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+/* Styling for the button text */
+.Sam button h2 {
+  margin: 0; /* Remove margin */
+}
+
+/* Change button background color on hover */
+.Sam button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Styling for the Home component */
+.EAM{
+  margin-left: 120px;
+  margin-top: 90px;
+}
+/* Style for the link */
+.link {
+  color: #007bff; /* Blue color */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.link:hover {
+  color: #0056b3; /* Darker blue */
+}
+.Ol{
+  text-align: center;
+  font-weight: bold;
+}
+.addblog-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #cad1d2;
+  margin-top: 100px;
+
+}
+
+.addblog-form p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.addblog-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.addblog-form input[type="text"],
+.addblog-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.addblog-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.addblog-form .btn-container {
+  text-align: center;
+}
+
+.addblog-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addblog-form button:hover {
+  background-color: #0056b3;
+}
+.posta {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section1 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.section1 p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.section2 img {
+  max-width: 40%;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.section2 p {
+  font-size: 1em;
+}
+
+.section3 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section3 p {
+  font-size: 0.9em;
+  color: #666666;
+}
+
+.section3 p:before {
+  content: "Posted on ";
+  font-weight: bold;
+}
+.titles{
+  text-align: center;
+  font-size: larger;
+  text-decoration: double;
+ 
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.datea{
+  font-size: larger;
+  text-decoration: double;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.SAm {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.SAm:hover {
+  background-color: #45a049; /* Darker Green */
+}
+/* Style for the container */
+.imK {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Style for the image */
+.imK img {
+  width: 300px; /* Set the width to medium */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes the image round */
+  margin-bottom: 20px;
+}
+
+/* Style for the heading */
+.Cte, .Samn {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.Cte, .Nie{
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+/* Style for the h1 */
+.Cte {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.Nie {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/* Style for the h2 */
+.Samn {
+  font-size: 18px;
+}
+
+/* Style for the Navbar */
+.Navbar {
+  /* Add your navbar styles here */
+}
