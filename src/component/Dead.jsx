@@ -186,7 +186,7 @@ img:"https://scontent.fshl2-1.fna.fbcdn.net/v/t39.30808-6/427904514_361690294524
         },  {
         id: 30 ,
         title: " Yumlembam Shiva ",
-        description: "S/o Y. Ibochouba from Sugnu  ",
+        description: "S/o Y. Ibochouba from Sugnu sd  ",
         img:"https://scontent.fshl2-1.fna.fbcdn.net/v/t39.30808-6/428157417_3616903155247984_7605794275709096734_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=e7nnFLD9LboAX8C-C5_&_nc_oc=AQmIPbKDXjhlLrLfTLcBpexS5lMLNpPp0UbgecE_wGhDeavIV5t3aO5Ra8dbP1DdiQcFob7HfidAnB1hi4FkS96a&_nc_ht=scontent.fshl2-1.fna&oh=00_AfBTpqz8isY21Q4ffhrVZdkt1kK3_Ky23huYItefM5gY5g&oe=65F3A463",
        
         }
