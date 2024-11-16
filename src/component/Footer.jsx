@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <img src={logo}/>
-      <span>Made with React js </span>
+      <span>Made with React js/Native </span>
     </footer>
   )
 }
