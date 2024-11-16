@@ -19,7 +19,7 @@ function May(){
     },
     {
       id: 3,
-      title: "July:Mass Rally Against Chin-Kuki Narco-Terrorism orgd, by, COCOMI",
+      title: "July:Mass Rally Against Chin-Kuki klo Narco-Terrorism orgd, by, COCOMI",
       description: "All of Manipur's communities, including the Meitei, Meitei Pangal, Kom, Tangkhul, and Kabui, joined together to demonstrate their support for Manipur and their belief that the state's geographical integrity cannot be compromised.They also urged an end to drug-related terrorism",
       img: "https://www.eastnews.in/assets/resources/2023/07/Adobe_Express_20230729_1833480_1.jpg",
     }, 
