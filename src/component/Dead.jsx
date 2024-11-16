@@ -195,7 +195,7 @@ img:"https://scontent.fshl2-1.fna.fbcdn.net/v/t39.30808-6/427904514_361690294524
       return (
         <div className='home'>
              <Navbar></Navbar>
-            <div className="Ol">List Of SomePeople that Deceased During War</div>
+            <div className="Ol">List Of SomePeople that Deceased(Dead) During War</div>
           <div className='posts'>
             {mays && mays.map(may => (
               <>
